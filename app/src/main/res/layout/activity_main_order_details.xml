@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:visibility="visible"
+    tools:context=".MainActivityOrderDetails"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:visibility="visible"
+            android:padding="20dp">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:id="@+id/reservaionOp"
+            android:text="@string/reservation_options"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textSize="22dp"
+                    android:textColor="@color/orange">
+
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:id="@+id/name"
+                    android:inputType="text"
+                    android:hint="@string/type_your_name"
+                    android:textColorHint="@color/gray">
+                </EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/your_invitation"
+                android:textSize="22dp"
+                android:textColor="@color/orange">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/menu"
+                android:hint="@string/you_didn_t_select_any_items"
+                android:textColorHint="@color/gray"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/select_the_number_of_diners"
+                android:textSize="22dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/orange">
+            </TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:background="@color/white"
+                android:layout_marginTop="15dp">
+            </Spinner>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/choose_time_of_reservation"
+                android:id="@+id/time_dialog_btn"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-black"
+                android:drawableLeft="@drawable/baseline_access_time_filled_24"
+                android:drawableRight="@drawable/baseline_access_time_filled_24"
+                android:backgroundTint="@color/orange"
+                android:layout_marginTop="15dp">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/select_payment_method"
+                android:textSize="22dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/orange">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radioGroup"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/credit_card"
+                        android:textColor="@color/white"
+                        android:id="@+id/r1"
+                        android:textSize="20dp">
+                    </RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/debit_card"
+                        android:textColor="@color/white"
+                        android:id="@+id/r2"
+                        android:textSize="20dp">
+                    </RadioButton>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/cash"
+                        android:id="@+id/r3"
+                        android:textColor="@color/white"
+                        android:textSize="20dp">
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notes"
+                    android:textSize="22dp"
+                    android:textColor="@color/orange">
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:id="@+id/note"
+                    android:inputType="text"
+                    android:maxLength="150"
+                    android:hint="@string/_150_characters"
+                    android:textColorHint="@color/gray">
+                </EditText>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/reserve_sits"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:backgroundTint="@color/blue"
+                android:id="@+id/detailsOrder">
+            </Button>
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

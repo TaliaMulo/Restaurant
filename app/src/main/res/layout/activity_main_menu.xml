@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:visibility="visible"
+    tools:context=".MainActivityMenu"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:visibility="visible"
+            tools:context=".MainActivityMenu"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/menu"
+                android:textColor="@color/orange"
+                android:textSize="35dp"
+                android:drawableLeft="@drawable/baseline_format_list_bulleted_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/food_item"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:id="@+id/foodItem"
+                android:drawableRight="@drawable/baseline_food_bank_24"
+                android:drawableLeft="@drawable/baseline_food_bank_24"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/click_on_the_image_for_detail"
+               android:textColor="@color/red"
+               android:id="@+id/sabtitle"
+               android:textSize="18dp">
+           </TextView>
+
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="28dp">
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/food1"
+                        android:id="@+id/image1"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:background="@color/orange">
+                    </ImageButton>
+
+                    <Space
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"/>
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/food2"
+                        android:id="@+id/image2"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:background="@color/orange">
+                    </ImageButton>
+                    <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:gravity="center|top"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"
+                        android:text="@string/vegetable_noodles"
+                        android:id="@+id/noodles"
+                        android:textSize="16dp"/>
+
+                    <Space
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|top"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"
+                        android:text="@string/miyagi_sushi"
+                        android:textSize="18dp"
+                        android:id="@+id/sushi1"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="28dp">
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/food3"
+                        android:id="@+id/image3"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:background="@color/orange">
+                    </ImageButton>
+
+                    <Space
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"/>
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/food4"
+                        android:id="@+id/image4"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:background="@color/orange">
+                    </ImageButton>
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    >
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:gravity="center|top"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"
+                        android:text="@string/rio_roll"
+                        android:id="@+id/sushi"
+                        android:textSize="18dp"/>
+
+                    <Space
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"
+                        android:gravity="center|top"
+                        android:text="@string/sanchai_salad"
+                        android:textSize="18dp"
+                        android:id="@+id/salad"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/drink_item"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:id="@+id/drinkItem"
+                android:drawableRight="@drawable/baseline_local_drink_24"
+                android:drawableLeft="@drawable/baseline_local_drink_24"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/click_on_the_image_detail"
+                android:textColor="@color/red"
+                android:id="@+id/sabtitl"
+                android:textSize="18dp">
+            </TextView>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="28dp">
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/drink1"
+                        android:id="@+id/cola"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:background="@color/orange">
+                    </ImageButton>
+
+                    <Space
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"/>
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/drink2"
+                        android:id="@+id/fuzetea"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:background="@color/orange">
+                    </ImageButton>
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"
+                        android:text="@string/coca_cola"
+                        android:id="@+id/drink1"
+                        android:gravity="center|top"
+                        android:textSize="18dp"/>
+
+                    <Space
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange"
+                        android:gravity="center|top"
+                        android:text="@string/fuzetea"
+                        android:textSize="18dp"
+                        android:id="@+id/drink2"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/orderbtn"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text="@string/click_to_continue_the_order_details"
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/black"
+                android:textSize="16dp">
+
+            </Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ChosenMenu"
+                android:visibility="invisible">
+            </TextView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
